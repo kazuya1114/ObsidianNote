@@ -180,11 +180,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d9909dd241054a30",
+  "active": "22400598b58b0a8b",
   "lastOpenFiles": [
-    "script/PowerShell.md",
     "script/shell・bash.md",
-    "README.md",
-    "script"
+    "script/PowerShell.md",
+    "script",
+    "README.md"
   ]
 }
