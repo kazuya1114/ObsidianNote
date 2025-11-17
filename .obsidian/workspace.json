@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "script/shell・bash.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "shell・bash"
             }
           }
         ]
@@ -184,6 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5d717d34737c4ef2",
-  "lastOpenFiles": []
+  "active": "22400598b58b0a8b",
+  "lastOpenFiles": [
+    "README.md",
+    "script/shell・bash.md",
+    "script"
+  ]
 }
