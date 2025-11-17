@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "script/PowerShell.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "PowerShell"
             }
           }
         ]
@@ -184,10 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0fd7b358131de36c",
+  "active": "22400598b58b0a8b",
   "lastOpenFiles": [
-    "script/PowerShell.md",
     "script/shell・bash.md",
+    "script/PowerShell.md",
     "README.md",
     "script"
   ]
