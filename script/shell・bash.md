@@ -19,6 +19,8 @@ EOF
 
 - `>> ログファイルパス`：上書き
 - `> ログファイルパス`：ファイル内容の置き換え
+- `2>> ログファイルパス`：エラー内容のみを出力し、ファイル内容は上書き
+- `2> ログファイルパス`：エラー内容のみ出力し、ファイル内容は置き換え
 
 ```bash
 LOG_FILE="/logs/log.txt"
@@ -26,6 +28,14 @@ LOG_FILE="/logs/log.txt"
 echo "$(date "+%Y-%m-%d %H:%M:%S") [INFO]処理開始" >> $LOG_FILE
 echo "$(date "+%Y-%m-%d %H:%M:%S") [ERROR]実行エラー" >> $LOG_FILE
 echo "$(date "+%Y-%m-%d %H:%M:%S") [INFO]処理終了" >> $LOG_FILE
+
+psql -d db_name -U user_name -f example.sql 2> $LOG_FILE
+
+# エラー内容一行ずつにタイムスタンプとログレベルを付与する
+# awkは渡ってきたテキストを行ごとに処理する
+psql -d db_name -U user_name -f example.sql 2> >(awk '{
+	print strftime("%Y-%m-%d %H:%M:%S"), "[INFO]", $0
+}' >> $LOG_FILE)
 ```
 
 # ループ処理
@@ -61,5 +71,60 @@ done <<< "${テキスト}"
 
 # 例
 result=$(ls)
+```
+
+# 直前に使用したコマンドの終了ステータス（exit code）を参照する
+
+```bash
+$?
+
+# 使い方
+if [$? -eq 0]; then
+	# 直前のコマンドが正常終了の場合
+else
+	# 直前のコマンドが正常終了以外の場合
+fi
+```
+
+# 別bashファイルをimportし、そのファイルで定義された関数を使用する
+
+### 共通スクリプト（Common.bash）
+
+```bash
+#!/bin/bash
+
+: <<'END'
+@author Kazuya, Hata
+@version 1.0
+END
+
+: <<'END'
+$3で指定されたファイルに$2で指定された内容をログとして吐き出す
+@param $1 処理結果(0：正常、0以外：エラー)
+@param $2 ログの出力内容
+@param $3 リダイレクト先のログファイルパス
+END
+outputLog() {
+  if [ $1 -eq 0]; then
+    # 出力内容がある場合のみ、ログ出力を行う
+    if [[ -n $2 ]]; then
+      echo "$(date "+%Y-%m-%d %H:%M:%S") [INFO]$2" >> $3
+    fi
+  else
+    echo "$(date "+%Y-%m-%d %H:%M:%S") [ERROR]$2" >> $3
+  fi
+}
+```
+
+### 共通スクリプトをimportし、関数を使用する
+
+```bash
+#!/bin/bash
+
+# 指定されたスクリプトを読み込む
+source ./Common.bash
+
+# 読み込んだ関数の使用(引数は半角空白で区切る)
+outputLog $? "テストです。" "/logs/log.txt"
 ```
 
