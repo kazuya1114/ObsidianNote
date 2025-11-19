@@ -128,3 +128,39 @@ source ./Common.bash
 outputLog $? "テストです。" "/logs/log.txt"
 ```
 
+# データの差替えを行う
+
+データ投入の方法について、単純なデータの差替えの場合、TRUNCATE実行後にINSERT SELECT、COPY、\copyといった方法があるが、シェル等を使ってDBサーバ上で直接作業をする場合、`INSERT SELECTが一番パフォーマンスがいい`
+※COPY系は別サーバへ情報を書き出す場合などに有利
+
+```bash
+LOG_FILE=/tmp/db_sync.log
+PASSWORD=postgres
+USER=postgres
+DBNAME=testdb
+TARGET_TABLE=test_table
+SOURCE_TABLE=fdw_table
+
+# データ同期処理
+# 同期先テーブル（内部テーブルを指定）
+# 同期元テーブル（外部テーブルを指定）
+function data_sync() {
+	local sync_target_table=$1
+	local sync_source_table=$2
+
+	/usr/sbin/runuser -l postgres -c "
+		# DB接続用のパスワードを設定
+		export PGPASSWORD=$PASSWORD
+
+		# -v ON_ERROR_STOP=1：エラーが起きた時点で処理を中断
+		psql -U $USER -d DBNAME -v ON_ERROR_STOP=1 <<EOF
+			BEGIN;
+			TRUNCATE TABLE $sync_target_table;
+			INSERT INTO $sync_target_table SELECT * FROM $sync_source_table;
+			COMMIT;
+EOF
+" 2>> "$LOG_FILE"
+}
+
+data_sync "$TARGET_TABLE" "$SOURCE_TABLE"
+```
