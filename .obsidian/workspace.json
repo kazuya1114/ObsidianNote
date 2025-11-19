@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "641d2e3e43f5e4f7",
+        "id": "43784025c8ac830f",
         "type": "tabs",
         "children": [
           {
-            "id": "d9909dd241054a30",
+            "id": "f4c41f99bdaf6129",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -184,11 +184,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d9909dd241054a30",
+  "active": "f4c41f99bdaf6129",
   "lastOpenFiles": [
+    "script/shell・bash.md",
     "機械学習/1.基礎.md",
     "機械学習",
-    "script/shell・bash.md",
     "script/PowerShell.md",
     "script",
     "README.md"
