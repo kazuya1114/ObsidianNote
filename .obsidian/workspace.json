@@ -36,7 +36,7 @@
             }
           },
           {
-            "id": "02c550804c4b4ad6",
+            "id": "69dec08e4a758e90",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -193,12 +193,23 @@
               "icon": "lucide-list",
               "title": "READMEのアウトライン"
             }
+          },
+          {
+            "id": "2edb1f9cfad38ae3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -213,9 +224,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "02c550804c4b4ad6",
+  "active": "69dec08e4a758e90",
   "lastOpenFiles": [
     "機械学習/2.前処理.md",
+    "無題のファイル.canvas",
+    "無題のファイル.base",
     "機械学習/3.回帰分析（回帰モデル）.md",
     "機械学習/pic/3.png",
     "機械学習/pic/2.png",
