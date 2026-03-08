@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "4.分類"
             }
+          },
+          {
+            "id": "fe2d6bca415ba893",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "リリースノート 1.12.4"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -200,17 +212,17 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新規ベースを作成": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
       "canvas:新規キャンバスを作成": false,
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
       "command-palette:コマンドパレットを開く": false,
-      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "23cfdf61c4d01c54",
+  "active": "fe2d6bca415ba893",
   "lastOpenFiles": [
     "機械学習/pic/13.png",
     "機械学習/pic/12.png",
