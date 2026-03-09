@@ -63,7 +63,8 @@
               "title": "5.クラスタリング"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -237,10 +238,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6d6cebeb8e53b385",
+  "active": "3e00f9b16617514c",
   "lastOpenFiles": [
-    "機械学習/5.クラスタリング.md",
     "機械学習/2.前処理.md",
+    "機械学習/5.クラスタリング.md",
     "機械学習/pic/49.png",
     "機械学習/pic/48.png",
     "機械学習/pic/47.png",
