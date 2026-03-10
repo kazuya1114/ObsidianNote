@@ -62,9 +62,23 @@
               "icon": "lucide-file",
               "title": "5.クラスタリング"
             }
+          },
+          {
+            "id": "3825479a21f2dc22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "機械学習/6.相関ルール学習（Association Rule Learning）.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "6.相関ルール学習（Association Rule Learning）"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -238,8 +252,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3e00f9b16617514c",
+  "active": "22400598b58b0a8b",
   "lastOpenFiles": [
+    "機械学習/5.クラスタリング.md",
+    "機械学習/6.相関ルール学習（Association Rule Learning）.md",
     "機械学習/pic/54.png",
     "機械学習/pic/53.png",
     "機械学習/pic/52.png",
@@ -247,14 +263,12 @@
     "機械学習/pic/50.png",
     "機械学習/3.回帰分析（回帰モデル）.md",
     "機械学習/2.前処理.md",
-    "機械学習/5.クラスタリング.md",
     "機械学習/4.分類.md",
     "機械学習/pic/49.png",
     "機械学習/pic/48.png",
     "機械学習/pic/47.png",
     "機械学習/pic/46.png",
     "機械学習/pic/45.png",
-    "機械学習/pic/44.png",
     "無題のファイル.base",
     "無題のファイル.canvas",
     "機械学習/pic",
