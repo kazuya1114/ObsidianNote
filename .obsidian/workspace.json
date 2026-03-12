@@ -223,8 +223,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -240,8 +239,8 @@
   },
   "active": "6c25f833f2967cf1",
   "lastOpenFiles": [
-    "機械学習/7.強化学習.md",
     "機械学習/8.自然言語処理（Natural Language Processing）.md",
+    "機械学習/7.強化学習.md",
     "機械学習/pic/68.png",
     "機械学習/pic/67.png",
     "機械学習/pic/66.png",
