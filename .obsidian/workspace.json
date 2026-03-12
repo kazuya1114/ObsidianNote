@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "機械学習/8.自然言語処理.md",
+                "file": "機械学習/8.自然言語処理（Natural Language Processing）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8.自然言語処理"
+              "title": "8.自然言語処理（Natural Language Processing）"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -238,12 +238,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "93a295513e026ebf",
+  "active": "6c25f833f2967cf1",
   "lastOpenFiles": [
+    "機械学習/7.強化学習.md",
+    "機械学習/8.自然言語処理（Natural Language Processing）.md",
     "機械学習/pic/68.png",
     "機械学習/pic/67.png",
-    "機械学習/8.自然言語処理.md",
-    "機械学習/7.強化学習.md",
     "機械学習/pic/66.png",
     "機械学習/pic/65.png",
     "機械学習/pic/64.png",
@@ -253,7 +253,6 @@
     "機械学習/pic/60.png",
     "機械学習/pic/59.png",
     "機械学習/6.相関ルール学習（Association Rule Learning）.md",
-    "機械学習/pic/58.png",
     "機械学習/5.クラスタリング.md",
     "DevOps/概要.md",
     "DevOps",
