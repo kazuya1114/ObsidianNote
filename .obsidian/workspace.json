@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "機械学習/9.ディープラーニング（Deep Learning）.md",
+                "file": "機械学習/10.次元削減（Dimensionality Reduction）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "9.ディープラーニング（Deep Learning）"
+              "title": "10.次元削減（Dimensionality Reduction）"
             }
           }
         ],
@@ -224,8 +224,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cc89b1c25936f5eb",
+  "active": "22400598b58b0a8b",
   "lastOpenFiles": [
+    "機械学習/9.ディープラーニング（Deep Learning）.md",
+    "機械学習/10.次元削減（Dimensionality Reduction）.md",
     "機械学習/pic/94.png",
     "機械学習/pic/93.png",
     "機械学習/pic/92.png",
@@ -236,8 +238,6 @@
     "機械学習/pic/87.png",
     "機械学習/pic/86.png",
     "機械学習/pic/85.png",
-    "機械学習/pic/84.png",
-    "機械学習/9.ディープラーニング（Deep Learning）.md",
     "機械学習/8.自然言語処理（Natural Language Processing）.md",
     "機械学習/2.前処理.md",
     "機械学習/1.基礎.md",
