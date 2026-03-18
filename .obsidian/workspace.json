@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -224,11 +224,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fbc947e929a290e4",
+  "active": "cc89b1c25936f5eb",
   "lastOpenFiles": [
+    "機械学習/9.ディープラーニング（Deep Learning）.md",
     "機械学習/10.次元削減（Dimensionality Reduction）.md",
     "機械学習/pic/95.png",
-    "機械学習/9.ディープラーニング（Deep Learning）.md",
     "機械学習/pic/94.png",
     "機械学習/pic/93.png",
     "機械学習/pic/92.png",
